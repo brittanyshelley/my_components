@@ -66,9 +66,9 @@
 // import 'swiper/css'; // Import Swiper styles
 // import 'swiper/css/pagination'; // Import styles for the pagination
 // import testimonials from '../data/testimonialsData';
-// import SwiperCore from 'swiper';
+// // import SwiperCore from 'swiper';
 
-// import { Parallax, Navigation, Pagination } from 'swiper/modules';
+// import { Parallax, Navigation, Pagination } from 'swiper';
 
 // export default function Testimonials() {
 //   return (
@@ -105,49 +105,49 @@
 
 
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css'; // Import Swiper styles
-import 'swiper/css/pagination'; // Import styles for the pagination
-import testimonials from '../data/testimonialsData';
-import SwiperCore, { Pagination } from 'swiper';
+// import { Swiper, SwiperSlide } from 'swiper/react';
+// import 'swiper/css'; // Import Swiper styles
+// import 'swiper/css/pagination'; // Import styles for the pagination
+// import testimonials from '../data/testimonialsData';
+// import SwiperCore, { Pagination } from 'swiper';
 
-// Install the Pagination module
-SwiperCore.use([Pagination]);
+// // Install the Pagination module
+// SwiperCore.use([Pagination]);
 
-export default function Testimonials() {
-  return (
-    <section className="py-12 bg-base-200" data-theme="mytheme">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-base-content">What Our Clients Say</h2>
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={30}
-          pagination={{ clickable: true }}
-          breakpoints={{
-            640: {
-              slidesPerView: 1,
-            },
-            1024: {
-              slidesPerView: 1,
-            },
-          }}
-          modules={[Pagination]}
-          className="mt-8"
-        >
-          {testimonials.map(({ id, name, position, testimonial }) => (
-            <SwiperSlide key={id}>
-              {/* Adjustments for glass effect and rounded corners */}
-              <div className="card-body backdrop-blur-md bg-opacity-20 bg-base-100 rounded-xl p-6 border border-base-300 shadow-lg">
-                <p className="text-md">{testimonial}</p>
-                <p className="text-sm text-base-content mt-4">{name}, {position}</p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-    </section>
-  );
-}
+// export default function Testimonials() {
+//   return (
+//     <section className="py-12 bg-base-200" data-theme="mytheme">
+//       <div className="container mx-auto px-4">
+//         <h2 className="text-3xl font-bold text-center text-base-content">What Our Clients Say</h2>
+//         <Swiper
+//           slidesPerView={1}
+//           spaceBetween={30}
+//           pagination={{ clickable: true }}
+//           breakpoints={{
+//             640: {
+//               slidesPerView: 1,
+//             },
+//             1024: {
+//               slidesPerView: 1,
+//             },
+//           }}
+//           modules={[Pagination]}
+//           className="mt-8"
+//         >
+//           {testimonials.map(({ id, name, position, testimonial }) => (
+//             <SwiperSlide key={id}>
+//               {/* Adjustments for glass effect and rounded corners */}
+//               <div className="card-body backdrop-blur-md bg-opacity-20 bg-base-100 rounded-xl p-6 border border-base-300 shadow-lg">
+//                 <p className="text-md">{testimonial}</p>
+//                 <p className="text-sm text-base-content mt-4">{name}, {position}</p>
+//               </div>
+//             </SwiperSlide>
+//           ))}
+//         </Swiper>
+//       </div>
+//     </section>
+//   );
+// }
 
 // import dynamic from 'next/dynamic';
 // import 'swiper/css'; // Import Swiper styles globally
@@ -188,3 +188,46 @@ export default function Testimonials() {
 // }
 
 
+import React, { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css'; // Import Swiper styles
+import 'swiper/css/pagination'; // Import styles for the pagination
+import 'swiper/css/navigation';
+import testimonials from '../data/testimonialsData';
+
+
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+export default function Testimonials() {
+  return (
+    <section className="py-10" >
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-semibold text-center">What Our Clients Say</h2>
+        {/* Swiper container */}
+        <Swiper
+          spaceBetween={30}
+          centeredSlides={true}
+          autoplay={{
+            delay: 10000,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
+          className="mySwiper"
+        >
+          {/* Mapping testimonials to SwiperSlides */}
+          {testimonials.map(({ id, name, position, testimonial }) => (
+            <SwiperSlide key={id} className="bg-white/20 backdrop-blur-lg py-7 rounded-md ">
+              <p className="text-sm font-medium text-center py-5">{testimonial}</p>
+              <p className="mt-4 text-sm text-accent text-center">{name}, {position}</p>
+            </SwiperSlide>
+
+          ))}
+        </Swiper>
+      </div>
+    </section>
+  );
+}

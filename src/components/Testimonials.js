@@ -200,7 +200,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function Testimonials() {
   return (
-    <section className="py-10" >
+    <section className="py-10 bg-base-200 text-base-content" data-theme="mytheme">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-semibold text-center">What Our Clients Say</h2>
         {/* Swiper container */}
@@ -220,8 +220,8 @@ export default function Testimonials() {
         >
           {/* Mapping testimonials to SwiperSlides */}
           {testimonials.map(({ id, name, position, testimonial }) => (
-            <SwiperSlide key={id} className="bg-white/20 backdrop-blur-lg py-7 rounded-md ">
-              <p className="text-sm font-medium text-center py-5">{testimonial}</p>
+            <SwiperSlide key={id} className="bg-base-100 bg-opacity/40 backdrop-blur-lg py-7 rounded-md ">
+              <h1 className="text-sm font-medium text-content-base text-center py-5">{testimonial}</h1>
               <p className="mt-4 text-sm text-accent text-center">{name}, {position}</p>
             </SwiperSlide>
 

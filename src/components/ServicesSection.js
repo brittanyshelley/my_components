@@ -19,7 +19,7 @@ const services = [
 ];
 
 const ServiceCard = ({ service }) => (
-  <div className="card w-auto bg-base-100 shadow-xl">
+  <div className="card w-auto bg-base-100 text-base-content shadow-xl">
     <div className="card-body items-center text-center">
       <div className="text-3xl">{service.icon}</div>
       <h2 className="card-title">{service.title}</h2>
@@ -30,7 +30,7 @@ const ServiceCard = ({ service }) => (
 
 const ServicesSection = () => {
   return (
-    <section className="py-10 bg-base-200">
+    <section className="py-10 bg-base-200 text-base-content">
       <div className="container mx-auto">
         <div className="text-center mb-10">
           <h1 className="text-4xl font-bold">My Services</h1>
@@ -42,7 +42,7 @@ const ServicesSection = () => {
           ))}
         </div>
       </div>
-      <div className="max-w-5xl mx-auto text-[#333] font-sans my-4">
+      <div className="max-w-5xl mx-auto font-sans my-4">
         <div className="text-center max-w-2xl mx-auto">
           <h2 className="text-3xl font-extrabold text-center mb-4">Our Exclusive Features</h2>
           <p className="text-sm">Unlock a world of possibilities with our exclusive features. Explore how our unique offerings can transform your journey and empower you to achieve more.</p>

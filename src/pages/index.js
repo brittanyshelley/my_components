@@ -23,7 +23,7 @@ const inter = Montserrat({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex min-h-screen flex-col bg-base-200">
       <Head>
         <title>Welcome to Dominion Lending Centers</title>
         <meta name="description" content="Find the best mortgage rates and services" />

@@ -49,7 +49,7 @@ import Image from "next/image";
 
 export default function ImageContent() {
   return (
-    <section className="py-16 px-4 mx-auto max-w-screen-2xl sm:px-6 lg:px-8">
+    <section className="py-16 px-4 mx-auto max-w-screen-2xl sm:px-6 lg:px-8 bg-base-200 text-base-content">
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:h-screen">
         <div className="relative z-10 lg:py-16">
           <div className="relative h-64 sm:h-80 lg:h-full">
@@ -61,7 +61,7 @@ export default function ImageContent() {
           </div>
         </div>
 
-        <div className="relative flex items-center bg-base-200"> 
+        <div className="relative flex items-center bg-base-100">
           <span
             className="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-base-200"></span>
 

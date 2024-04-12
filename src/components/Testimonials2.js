@@ -148,7 +148,7 @@ export default function Testimonials2() {
   };
 
   return (
-    <section className="py-20 bg-base-100 text-base-content">
+    <section className="py-20 bg-base-200 text-base-content">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5">
         <div className="text-center">
           <h1 className="text-3xl font-bold">Client’s Say About Us</h1>

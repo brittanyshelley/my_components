@@ -1,22 +1,51 @@
 import React from 'react';
 
+// const services = [
+//   {
+//     title: 'Web Design',
+//     description: 'Create beautiful, responsive websites.',
+//     icon: '🎨', // You can replace these emojis with actual icons
+//   },
+//   {
+//     title: 'Development',
+//     description: 'Develop high-quality web applications.',
+//     icon: '💻',
+//   },
+//   {
+//     title: 'SEO',
+//     description: 'Improve your website\'s visibility on search engines.',
+//     icon: '🔍',
+//   },
+// ];
+
 const services = [
   {
-    title: 'Web Design',
-    description: 'Create beautiful, responsive websites.',
-    icon: '🎨', // You can replace these emojis with actual icons
+    title: 'Home Purchase Loans',
+    description: 'Assist you in securing financing for buying a new home, offering competitive rates and guidance through the loan process.',
+    icon: '🏠', // Replace with an icon that represents home buying
   },
   {
-    title: 'Development',
-    description: 'Develop high-quality web applications.',
-    icon: '💻',
+    title: 'Refinancing',
+    description: 'Help you refinance your existing mortgage to take advantage of lower interest rates, reduce monthly payments, or access home equity.',
+    icon: '🔄', // Replace with an icon that represents refinancing
   },
   {
-    title: 'SEO',
-    description: 'Improve your website\'s visibility on search engines.',
-    icon: '🔍',
+    title: 'Mortgage Renewals',
+    description: 'Manage the renewal of your mortgage at terms that benefit your financial goals, ensuring the best possible rate and terms.',
+    icon: '📆', // Replace with an icon that represents renewals
+  },
+  {
+    title: 'Commercial Mortgages',
+    description: 'Provide financing options for purchasing, refinancing, or expanding commercial properties.',
+    icon: '🏢', // Replace with an icon that represents commercial buildings
+  },
+  {
+    title: 'Debt Consolidation',
+    description: 'Consolidate multiple debt payments into a single mortgage payment at a lower interest rate, simplifying your finances and saving money.',
+    icon: '💸', // Replace with an icon that represents saving money or consolidation
   },
 ];
+
 
 const ServiceCard = ({ service }) => (
   <div className="card w-auto bg-base-100 text-base-content shadow-xl">

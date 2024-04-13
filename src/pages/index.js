@@ -18,6 +18,7 @@ import BioSection from '../components/BioSection';
 import AboutMe from '../components/AboutMe';
 import Blogs from '../components/Blogs';
 import LogoClouds from '../components/LogoClouds';
+import MortgageApplication from '../components/MortgageApplication';
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -29,21 +30,22 @@ export default function Home() {
         <meta name="description" content="Find the best mortgage rates and services" />
       </Head>
 
-        <HeroSection />
-        <AboutMe />
-        <LogoClouds />
-        <ServicesSection />
-        <ServicesSection2 />
-        <ServicesSection3 />
-        <ServicesSection4 />
-        <ImageContext />
-        <Blogs />
-        {/* Mortgage Calculators Teaser */}
-        {/* Testimonials */}
-        <Testimonials />
-        <Testimonials2 />
-        {/* <Testimonials3 /> */}
-        <ContactForm />
+      <HeroSection />
+      <AboutMe />
+      {/* <MortgageApplication /> */}
+      <LogoClouds />
+      <ServicesSection />
+      <ServicesSection2 />
+      <ServicesSection3 />
+      <ServicesSection4 />
+      <ImageContext />
+      <Blogs />
+      {/* Mortgage Calculators Teaser */}
+      {/* Testimonials */}
+      <Testimonials />
+      <Testimonials2 />
+      {/* <Testimonials3 /> */}
+      <ContactForm />
 
     </main>
   );

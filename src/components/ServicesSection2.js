@@ -14,7 +14,7 @@ const ServicesSection2 = () => {
           </div>
         </div>
       </div> */}
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
 
         <div className="mt-16">
           <div className="grid md:grid-cols-2 items-center gap-16">

@@ -18,7 +18,7 @@ import BioSection from '../components/BioSection';
 import AboutMe from '../components/AboutMe';
 import Blogs from '../components/Blogs';
 import LogoClouds from '../components/LogoClouds';
-import MortgageApplication from '../components/MortgageApplication';
+
 
 const inter = Montserrat({ subsets: ["latin"] });
 
@@ -32,7 +32,7 @@ export default function Home() {
 
       <HeroSection />
       <AboutMe />
-      {/* <MortgageApplication /> */}
+
       <LogoClouds />
       <ServicesSection />
       <ServicesSection2 />

@@ -1,5 +1,5 @@
 import "@/styles/globals.css";
-import { Montserrat } from 'next/font/google'
+import { Montserrat } from 'next/font/google';
 import Navbar2 from "@/components/Navbar2";
 import Footer from "@/components/Footer";
 import { ThemeProvider } from '../context/ThemeContext';
@@ -9,7 +9,7 @@ import { ThemeProvider } from '../context/ThemeContext';
 const inter = Montserrat({
   weight: ['400', '700'],
   subsets: ['latin']
-})
+});
 
 export default function App({ Component, pageProps }) {
   return (

@@ -16,4 +16,4 @@ First fork and clone. Then run "npm install" then "npm run dev"
 !["Glowing Card"](https://github.com/brittanyshelley/my_components/blob/main/docs/Library%20-%207%20of%2010.jpeg?raw=true)
 !["Glowing Buttons with Animation"](https://github.com/brittanyshelley/my_components/blob/main/docs/Library%20-%208%20of%2010.jpeg?raw=true)
 !["Blog"](https://github.com/brittanyshelley/my_components/blob/main/docs/Library%20-%208%20of%2010.jpeg?raw=true)
-!["Contact Card"](https://github.com/brittanyshelley/my_components/blob/main/docs/Library%20-%208%20of%2010.jpeg?raw=true)
+!["Contact Card"](https://github.com/brittanyshelley/my_components/blob/main/docs/Library%20-%2010%20of%2010.jpeg?raw=true)

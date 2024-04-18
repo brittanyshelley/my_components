@@ -1,4 +1,4 @@
-Working on components to start developing mortgage broker websites. These are just a few components I have been working on and continue too. Using CSS animations, swiper, react, Next.js and continuing to explore more tools.
+Working on components to start developing mortgage broker websites. These are just a few components I have been working on and continue too. Using CSS animations, swiper, react, Next.js and daisyui/tailwind css with a 34 theme selector and continuing to explore more tools.
 
 ## Getting Started
 

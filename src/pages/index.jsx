@@ -18,6 +18,10 @@ import BioSection from '../components/BioSection';
 import AboutMe from '../components/AboutMe';
 import Blogs from '../components/Blogs';
 import LogoClouds from '../components/LogoClouds';
+import ServicesSectionGradient from "../components/ServicesSectionGradient";
+import GlowingCard from "../components/GlowingCard";
+import GlowButton from "../components/GlowButton";
+import ServicesSection5 from "@/components/ServicesSection5";
 
 
 const inter = Montserrat({ subsets: ["latin"] });
@@ -35,9 +39,14 @@ export default function Home() {
 
       <LogoClouds />
       <ServicesSection />
+      <ServicesSectionGradient />
       <ServicesSection2 />
       <ServicesSection3 />
       <ServicesSection4 />
+      <ServicesSection5 />
+      <ButtonGradient />
+      <GlowingCard />
+      <GlowButton />
       <ImageContext />
       <Blogs />
       {/* Mortgage Calculators Teaser */}

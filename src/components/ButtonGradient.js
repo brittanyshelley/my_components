@@ -4,9 +4,9 @@ import React from "react";
 export default function ButtonGradient() {
 
   return (
-    <div className="container mx-auto justify-content-space-between" >
+    <div className="container mx-auto flex py-4 justify-content space-between" >
       <a
-        className="group inline-block rounded bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
+        className="group inline-block mb-4 rounded bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
         href="#"
       >
         <span className="block rounded-sm bg-white px-8 py-3 text-sm font-medium group-hover:bg-transparent">
@@ -17,7 +17,7 @@ export default function ButtonGradient() {
 
 
       <a
-        className="group inline-block rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
+        className="group inline-block mb-4 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75"
         href="#"
       >
         <span
@@ -27,7 +27,7 @@ export default function ButtonGradient() {
         </span>
       </a>
       <a
-        className="group relative inline-block text-sm font-medium text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+        className="group relative mb-4 inline-block text-sm font-medium text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
         href="#"
       >
         <span
@@ -40,7 +40,7 @@ export default function ButtonGradient() {
       {/* Hover */}
 
       <a
-        className="group relative inline-block text-sm font-medium text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+        className="group relative mb-4 inline-block text-sm font-medium text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
         href="#"
       >
         <span
@@ -50,7 +50,7 @@ export default function ButtonGradient() {
         <span className="relative block border border-current bg-white px-8 py-3"> Download </span>
       </a>
       <a
-        className="group relative inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
+        className="group relative mb-4 inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
         href="#"
       >
         <span className="absolute -start-full transition-all group-hover:start-4">
@@ -76,7 +76,7 @@ export default function ButtonGradient() {
       {/* Border - Right */}
 
       <a
-        className="group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+        className="group relative mb-4 inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
         href="#"
       >
         <span className="absolute -start-full transition-all group-hover:start-4">
@@ -102,7 +102,7 @@ export default function ButtonGradient() {
       {/* Base - Left */}
 
       <a
-        className="group relative inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
+        className="group mb-4 relative inline-flex items-center overflow-hidden rounded bg-indigo-600 px-8 py-3 text-white focus:outline-none focus:ring active:bg-indigo-500"
         href="#"
       >
         <span className="absolute -end-full transition-all group-hover:end-4">
@@ -128,7 +128,7 @@ export default function ButtonGradient() {
       {/* Border - Left */}
 
       <a
-        className="group relative inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+        className="group relative mb-4 inline-flex items-center overflow-hidden rounded border border-current px-8 py-3 text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
         href="#"
       >
         <span className="absolute -end-full transition-all group-hover:end-4">
@@ -151,7 +151,7 @@ export default function ButtonGradient() {
         <span className="text-sm font-medium transition-all group-hover:me-4"> Download </span>
       </a>
       <a
-        className="inline-block rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
+        className="inline-block mb-4 rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:bg-indigo-500"
         href="#"
       >
         Download
@@ -160,13 +160,13 @@ export default function ButtonGradient() {
       {/* Border */}
 
       <a
-        className="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500"
+        className="inline-block mb-4 rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:scale-110 hover:shadow-xl focus:outline-none focus:ring active:text-indigo-500"
         href="#"
       >
         Download
       </a>
       <a
-        className="inline-block rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500"
+        className="inline-block mb-4 rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500"
         href="#"
       >
         Download
@@ -175,7 +175,7 @@ export default function ButtonGradient() {
       {/* Border - Right */}
 
       <a
-        className="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:text-indigo-500"
+        className="inline-block mb-4 rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:rotate-2 hover:scale-110 focus:outline-none focus:ring active:text-indigo-500"
         href="#"
       >
         Download
@@ -184,7 +184,7 @@ export default function ButtonGradient() {
       {/* Base - Left */}
 
       <a
-        className="inline-block rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:-rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500"
+        className="inline-block mb-4 rounded bg-indigo-600 px-8 py-3 text-sm font-medium text-white transition hover:-rotate-2 hover:scale-110 focus:outline-none focus:ring active:bg-indigo-500"
         href="#"
       >
         Download
@@ -193,12 +193,12 @@ export default function ButtonGradient() {
       {/* Border - Left */}
 
       <a
-        className="inline-block rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:-rotate-2 hover:scale-110 focus:outline-none focus:ring active:text-indigo-500"
+        className="inline-block mb-4 rounded border border-current px-8 py-3 text-sm font-medium text-indigo-600 transition hover:-rotate-2 hover:scale-110 focus:outline-none focus:ring active:text-indigo-500"
         href="#"
       >
         Download
       </a>
-      <a className="group relative inline-block focus:outline-none focus:ring" href="#">
+      <a className="group relative mb-4 inline-block focus:outline-none focus:ring" href="#">
         <span
           className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-yellow-300 transition-transform group-hover:translate-x-0 group-hover:translate-y-0"
         ></span>
@@ -224,7 +224,7 @@ export default function ButtonGradient() {
         </span>
       </a>
       <a
-        className="group relative inline-block overflow-hidden border border-indigo-600 px-8 py-3 focus:outline-none focus:ring"
+        className="group relative mb-4 inline-block overflow-hidden border border-indigo-600 px-8 py-3 focus:outline-none focus:ring"
         href="#"
       >
         <span
@@ -240,7 +240,7 @@ export default function ButtonGradient() {
       {/* Right */}
 
       <a
-        className="group relative inline-block overflow-hidden border border-indigo-600 px-8 py-3 focus:outline-none focus:ring"
+        className="group relative mb-4 inline-block overflow-hidden border border-indigo-600 px-8 py-3 focus:outline-none focus:ring"
         href="#"
       >
         <span
@@ -257,7 +257,7 @@ export default function ButtonGradient() {
       {/* Bottom */}
 
       <a
-        className="group relative inline-block overflow-hidden border border-indigo-600 px-8 py-3 focus:outline-none focus:ring"
+        className="group relative mb-4 inline-block overflow-hidden border border-indigo-600 px-8 py-3 focus:outline-none focus:ring"
         href="#"
       >
         <span
@@ -274,7 +274,7 @@ export default function ButtonGradient() {
       {/* Top */}
 
       <a
-        className="group relative inline-block overflow-hidden border border-indigo-600 px-8 py-3 focus:outline-none focus:ring"
+        className="group relative mb-4 inline-block overflow-hidden border border-indigo-600 px-8 py-3 focus:outline-none focus:ring"
         href="#"
       >
         <span
@@ -288,7 +288,7 @@ export default function ButtonGradient() {
         </span>
       </a>
       <a
-        className="group relative inline-block text-sm font-medium text-white focus:outline-none focus:ring"
+        className="group relative mb-4 inline-block text-sm font-medium text-white focus:outline-none focus:ring"
         href="#"
       >
         <span className="absolute inset-0 border border-red-600 group-active:border-red-500"></span>
@@ -302,7 +302,7 @@ export default function ButtonGradient() {
       {/* Border */}
 
       <a
-        className="group relative inline-block text-sm font-medium text-red-600 focus:outline-none focus:ring active:text-red-500"
+        className="group relative mb-4  inline-block text-sm font-medium text-red-600 focus:outline-none focus:ring active:text-red-500"
         href="#"
       >
         <span className="absolute inset-0 border border-current"></span>

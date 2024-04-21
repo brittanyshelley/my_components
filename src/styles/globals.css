@@ -165,3 +165,51 @@ body {
 .glowing-card {
   animation: glow 2s ease-in-out infinite;
 }
+
+
+/* ---- end glowcard ---- */
+
+/* ---- glowbuttons2 ---- */
+.button.glow-effect {
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  color: #29ffec;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  background-color: #000000;
+}
+
+.button.glow-effect:hover {
+  background: #29ffec;
+  color: black;
+  box-shadow: 0 0 5px #29ffec, 0 0 25px #29ffec, 0 0 50px #29ffec, 0 0 200px #29ffec;
+}
+
+.button.glow-effect span {
+  position: absolute;
+  display: block;
+}
+
+.button.glow-effect span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(360deg, transparent, #29ffec);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+/* ---- end glowbuttons2 ---- */

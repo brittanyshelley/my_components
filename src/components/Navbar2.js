@@ -19,7 +19,7 @@ const Navbar2 = () => {
       } />
       <div className="mx-auto lg:max-w-7xl w-full px-5 sm:px-10 md:px-12 lg:px-5">
         <div className="w-full flex justify-between h-14 items-center">
-          <div className="h-full flex items-center gap-x-4 text-base-content">
+          <div className="h-full flex items-center gap-x-4 text-neutral-content">
             <a href="tel:" className="flex gap-1 text-sm">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                 <path d="M14.414 7l3.293-3.293a1 1 0 00-1.414-1.414L13 5.586V4a1 1 0 10-2 0v4.003a.996.996 0 00.617.921A.997.997 0 0012 9h4a1 1 0 100-2h-1.586z" />
@@ -36,7 +36,7 @@ const Navbar2 = () => {
               <span className="hidden sm:flex">brokerbrooke@brookeshelley.ca</span>
             </a>
           </div>
-          <div className="flex items-center gap-x-2.5 -mx-2 text-base-content rounded-box">
+          <div className="flex items-center gap-x-2.5 -mx-2 text-neutral-content rounded-box">
             <a target="_blank" rel='noreferer' href="#facebook" className="transition ease-linear hover:text-secondary">
               <svg xmlns="http://www.w3.org/2000/svg" width={16} height={16} fill="currentColor" className="bi bi-facebook" viewBox="0 0 16 16">
                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />

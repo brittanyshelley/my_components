@@ -21,7 +21,9 @@ import LogoClouds from '../components/LogoClouds';
 import ServicesSectionGradient from "../components/ServicesSectionGradient";
 import GlowingCard from "../components/GlowingCard";
 import GlowButton from "../components/GlowButton";
+import GlowButton2 from "@/components/GlowButton2";
 import ServicesSection5 from "@/components/ServicesSection5";
+import ProfileCard from "@/components/ProfileCard";
 
 
 const inter = Montserrat({ subsets: ["latin"] });
@@ -36,7 +38,7 @@ export default function Home() {
 
       <HeroSection />
       <AboutMe />
-
+      <ProfileCard />
       <LogoClouds />
       <ServicesSection />
       <ServicesSectionGradient />
@@ -47,6 +49,7 @@ export default function Home() {
       <ButtonGradient />
       <GlowingCard />
       <GlowButton />
+      <GlowButton2 />
       <ImageContext />
       <Blogs />
       {/* Mortgage Calculators Teaser */}
@@ -55,7 +58,17 @@ export default function Home() {
       <Testimonials2 />
       {/* <Testimonials3 /> */}
       <ContactForm />
-
+      <div className="card w-96 glass">
+        <div className="card-body">
+          <h2 className="card-title">Life hack</h2>
+          <p>How to park your car at your garage?</p>
+          <div className="card-actions justify-end">
+            <button className="btn btn-primary">Learn now!</button>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
+
+// pages/index.js

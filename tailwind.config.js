@@ -15,7 +15,7 @@ module.exports = {
     },
   },
   plugins: [
-    require('daisyui'), // DaisyUI plugin // Tailwind CSS Filters plugin (if you're using Tailwind CSS v2)
+    require("@tailwindcss/typography"), require("daisyui") // DaisyUI plugin // Tailwind CSS Filters plugin (if you're using Tailwind CSS v2)
   ],
   daisyui: {
     themes: [

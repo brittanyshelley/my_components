@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 
 const services = [
@@ -29,18 +29,15 @@ const services = [
   },
 ];
 
-
-const ServiceCard = ({ service }) => (
-  <div className="card w-auto bg-base-100 text-base-content shadow-xl">
-    <div className="card-body items-center text-center">
-      <div className="text-3xl">{service.icon}</div>
-      <h2 className="card-title">{service.title}</h2>
-      <p>{service.description}</p>
-    </div>
+const ServiceItem = ({ service }) => (
+  <div className="py-4 px-6 bg-base-200 hover:bg-gray-100 rounded-lg text-center">
+    <div className="text-3xl mb-2">{service.icon}</div> {/* Icon displayed on top */}
+    <h2 className="text-xl font-bold">{service.title}</h2>
+    <p>{service.description}</p>
   </div>
 );
 
-const ServicesSection = () => {
+const ServicesSection6 = () => {
   return (
     <section className="py-10 bg-base-200 text-base-content">
       <div className="container mx-auto px-4">
@@ -48,9 +45,9 @@ const ServicesSection = () => {
           <h1 className="text-4xl font-bold">My Services</h1>
           <p className="text-xl">What I can offer you</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {services.map(service => (
-            <ServiceCard key={service.title} service={service} />
+            <ServiceItem key={service.title} service={service} />
           ))}
         </div>
       </div>
@@ -64,4 +61,5 @@ const ServicesSection = () => {
   );
 };
 
-export default ServicesSection;
+
+export default ServicesSection6;

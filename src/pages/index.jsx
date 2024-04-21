@@ -23,6 +23,7 @@ import GlowingCard from "../components/GlowingCard";
 import GlowButton from "../components/GlowButton";
 import GlowButton2 from "@/components/GlowButton2";
 import ServicesSection5 from "@/components/ServicesSection5";
+import ServicesSection6 from "@/components/ServicesSection6";
 import ProfileCard from "@/components/ProfileCard";
 
 
@@ -46,6 +47,7 @@ export default function Home() {
       <ServicesSection3 />
       <ServicesSection4 />
       <ServicesSection5 />
+      <ServicesSection6 />
       <ButtonGradient />
       <GlowingCard />
       <GlowButton />

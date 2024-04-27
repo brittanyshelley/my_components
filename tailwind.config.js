@@ -55,16 +55,16 @@ module.exports = {
         name: 'mytheme', // Specify the custom theme name here
         theme: {
           // Define your custom theme colors and settings
-          "primary": "#bd00ff",
-          "secondary": "#0000ff",
-          "accent": "#ea0000",
-          "neutral": "#0c0913",
-          "base-100": "#000000", // Make sure this value is valid, "#0000" seems incorrect
-          "info": "#00eeff",
-          "success": "#00e93c",
-          "warning": "#f04900",
-          "error": "#ff1e51",
-        }
+          "primary": "#1e3a8a",
+          "secondary": "#1d4ed8",
+          "accent": "#f3f4f6",
+          "neutral": "#1e201b",
+          "base-100": "#f7fcff",
+          "info": "#008cf2",
+          "success": "#009c49",
+          "warning": "#facc15",
+          "error": "#991b1b",
+        },
       },
     ],
   },

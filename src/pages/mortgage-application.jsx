@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { submitMortgageApplication } from '../services/supabase/applications';
 
-function MortgageApplicationForm() {
+function MortgageApplicationForm2() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -64,4 +64,4 @@ function MortgageApplicationForm() {
   );
 }
 
-export default MortgageApplicationForm;
+export default MortgageApplicationForm2;

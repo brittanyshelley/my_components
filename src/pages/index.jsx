@@ -27,7 +27,9 @@ import ServicesSection5 from "@/components/ServicesSection5";
 import ServicesSection6 from "@/components/ServicesSection6";
 import MortgageAffordabilityCalculator from "@/components/MortgageAffordabilityCalculator";
 import MortgageCalculator from "@/components/MortgageCalculator";
+import MortgageCalculator1 from "@/components/MortgageCalculator1";
 import MortgageApplicationForm from "@/components/MortgageApplicationForm";
+import MortgageApplicationForm2 from "./mortgage-application";
 
 
 
@@ -54,7 +56,9 @@ export default function Home() {
       <ServicesSection6 />
       <MortgageAffordabilityCalculator />
       <MortgageCalculator />
+      <MortgageCalculator1 />
       <MortgageApplicationForm />
+      <MortgageApplicationForm2 />
       <GlowingCard />
       <GlowButton />
       <GlowButton2 />

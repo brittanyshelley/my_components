@@ -1,23 +1,7 @@
-// utils/supabaseClient.js
-import { supabase } from './supabaseClient';
+// src/utils/supabaseClient.js
+import { createClient } from '@supabase/supabase-js';
 
-async function createApplication(applicantDetails, loanDetails) {
-  const { data: applicant, error: applicantError } = await supabase
-    .from('applicants')
-    .insert([applicantDetails]);
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-  if (applicantError) throw new Error(applicantError.message);
-
-  const applicationDetails = {
-    applicant_id: applicant[0].id,
-    ...loanDetails
-  };
-
-  const { data: application, error: applicationError } = await supabase
-    .from('applications')
-    .insert([applicationDetails]);
-
-  if (applicationError) throw new Error(applicationError.message);
-
-  return application;
-}
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);

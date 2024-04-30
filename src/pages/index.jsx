@@ -11,6 +11,7 @@ import ServicesSection from '../components/ServicesSection';
 import ServicesSection2 from '../components/ServicesSection2';
 import ServicesSection3 from '../components/ServicesSection3';
 import ServicesSection4 from '../components/ServicesSection4';
+import ContactForm1 from '../components/ContactForm1';
 import ContactForm from '../components/ContactForm';
 import ImageContext from '../components/ImageContext';
 import ButtonGradient from '../components/ButtonGradient';
@@ -26,6 +27,7 @@ import ServicesSection5 from "@/components/ServicesSection5";
 import ServicesSection6 from "@/components/ServicesSection6";
 import MortgageAffordabilityCalculator from "@/components/MortgageAffordabilityCalculator";
 import MortgageCalculator from "@/components/MortgageCalculator";
+import MortgageApplicationForm from "@/components/MortgageApplicationForm";
 
 
 
@@ -52,6 +54,7 @@ export default function Home() {
       <ServicesSection6 />
       <MortgageAffordabilityCalculator />
       <MortgageCalculator />
+      <MortgageApplicationForm />
       <GlowingCard />
       <GlowButton />
       <GlowButton2 />
@@ -62,6 +65,7 @@ export default function Home() {
       <Testimonials />
       <Testimonials2 />
       {/* <Testimonials3 /> */}
+      <ContactForm1 />
       <ContactForm />
 
     </main>

@@ -1,24 +1,12 @@
-import { supabase } from '../../utils/supabaseClient';
+// src/services/supabase/applications.js
+import { supabase } from './supabaseClient';
 
-async function createApplication(applicantDetails, loanDetails) {
-  const { data: applicant, error: applicantError } = await supabase
-    .from('applicants')
-    .insert([applicantDetails]);
+export async function submitMortgageApplication(formData) {
+  const { data, error } = await supabase
+    .from('mortgage_applications')
+    .insert([formData]);
 
-  if (applicantError) throw new Error(applicantError.message);
+  if (error) throw new Error(error.message);
 
-  const applicationDetails = {
-    applicant_id: applicant[0].id,
-    ...loanDetails
-  };
-
-  const { data: application, error: applicationError } = await supabase
-    .from('applications')
-    .insert([applicationDetails]);
-
-  if (applicationError) throw new Error(applicationError.message);
-
-  return application;
+  return data;
 }
-
-export { createApplication };

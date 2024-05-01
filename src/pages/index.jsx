@@ -58,7 +58,7 @@ export default function Home() {
       <MortgageCalculator />
       <MortgageCalculator1 />
       <MortgageApplicationForm />
-      <MortgageApplicationForm2 />
+      {/* <MortgageApplicationForm2 /> */}
       <GlowingCard />
       <GlowButton />
       <GlowButton2 />

@@ -23,7 +23,12 @@ const services = [
     icon: '🏢', // Replace with an icon that represents commercial buildings
   },
   {
-    title: 'Debt Consolidation',
+    title: 'Line of Credit',
+    description: 'Consolidate multiple debt payments into a single mortgage payment at a lower interest rate, simplifying your finances and saving money.',
+    icon: '💸', // Replace with an icon that represents saving money or consolidation
+  },
+  {
+    title: 'Small Business Loans',
     description: 'Consolidate multiple debt payments into a single mortgage payment at a lower interest rate, simplifying your finances and saving money.',
     icon: '💸', // Replace with an icon that represents saving money or consolidation
   },

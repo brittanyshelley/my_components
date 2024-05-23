@@ -29,7 +29,7 @@ import MortgageAffordabilityCalculator from "@/components/MortgageAffordabilityC
 import MortgageCalculator from "@/components/MortgageCalculator";
 import MortgageCalculator1 from "@/components/MortgageCalculator1";
 import MortgageApplicationForm from "@/components/MortgageApplicationForm";
-import MortgageApplicationForm2 from "./mortgage-application";
+
 
 
 
@@ -47,13 +47,13 @@ export default function Home() {
       <AboutMe />
 
       <LogoClouds />
-      <ServicesSection />
+      {/* <ServicesSection />
       <ServicesSectionGradient />
       <ServicesSection2 />
       <ServicesSection3 />
-      <ServicesSection4 />
+      <ServicesSection4 /> */}
       <ServicesSection5 />
-      <ServicesSection6 />
+      {/* <ServicesSection6 /> */}
       <MortgageAffordabilityCalculator />
       <MortgageCalculator />
       <MortgageCalculator1 />
@@ -69,7 +69,7 @@ export default function Home() {
       <Testimonials />
       <Testimonials2 />
       {/* <Testimonials3 /> */}
-      <ContactForm1 />
+      {/* <ContactForm1 /> */}
       <ContactForm />
 
     </main>
